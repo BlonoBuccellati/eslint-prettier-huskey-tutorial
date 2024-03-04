@@ -1,0 +1,18 @@
+{
+  "env": {
+    "browser": true, // window, alert, documentなどを許可する。
+    "node": true, // process, など
+    "es2015": true //ECMAScriptのes2015を許可する。
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest", //ecmaScriptの最新バージョンを許可。
+    "sourceType": "module" // import export を許可。
+  },
+  //構文チェックルール
+  "rules": {
+    "no-console": ["off"] //コンソール使うと警告。
+  },
+  //構文のプリセット（パッケージ？）
+  "extends": ["airbnb-base"]
+}
+//優先度は、rules > extends
